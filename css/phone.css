@@ -1,4 +1,11 @@
 /* navigation bar */
+
+#navbar::before {
+    height: 100%;
+
+
+}
+
 #navbar {
     flex-direction: column;
 
@@ -12,14 +19,15 @@
 
 
 /* home section */
+
 #home {
-    height: 200px;
+    height: 495px;
     padding: 20px 13px;
 
 }
 
 #home::before {
-    height: 471px;
+    height: 100%;
 
 }
 
@@ -43,12 +51,26 @@
 }
 
 /* client section */
-.clients {
-    flex-wrap: wrap;
+#client-section .clients {
+    /* display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;  */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 30px;
+    margin-top: 10px;
+    padding: 3px;
+}
+
+#client-section .clients img {
+    height: 75px;
+
 }
 
 .clients img {
-    width: 66px;
+    width: 50px;
+    height: 40px;
     padding: 0px;
 
 
